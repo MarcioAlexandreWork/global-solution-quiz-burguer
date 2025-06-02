@@ -1,0 +1,67 @@
+body{
+    background-color: dimgrey;
+    font-size: 20px;
+    font-style: arial;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+
+.slider{
+    display: flex;
+    overflow-x: hidden;
+    width: 900px;
+    justify-content: center;
+    
+
+}
+
+.content{
+    display: flex;
+    width: fit-content;
+}
+
+.content img{
+    width: 900px;
+    height:350px;
+    object-fit: cover;
+
+}
+.content-button{
+    width: 60px;
+    height: 60px;
+    border:none;
+    
+}
+
+.container-cabecalho{   
+    background-color: black;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    justify-content: left;
+    
+}
+
+.cabecalho{
+    color: rgb(130, 126, 126);
+    text-align: center;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 50px;
+}
+
+.botoes{
+    margin-left:auto;
+    height:20px;
+    justify-content: right;
+    display: grid;
+    margin: 0;
+
+
+}
+
