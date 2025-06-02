@@ -8,35 +8,6 @@ body{
     color: white;
 }
 
-
-
-.slider{
-    display: flex;
-    overflow-x: hidden;
-    width: 900px;
-    justify-content: center;
-    
-
-}
-
-.content{
-    display: flex;
-    width: fit-content;
-}
-
-.content img{
-    width: 900px;
-    height:350px;
-    object-fit: cover;
-
-}
-.content-button{
-    width: 60px;
-    height: 60px;
-    border:none;
-    
-}
-
 .container-cabecalho{   
     background-color: black;
     height: 125px;
