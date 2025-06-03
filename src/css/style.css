@@ -6,7 +6,9 @@ body{
     padding: 0;
     box-sizing: border-box;
     color: white;
+    
 }
+
 
 .container-cabecalho{   
     background-color: black;
@@ -36,3 +38,64 @@ body{
 
 }
 
+.quiztime{ 
+    margin: 150px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* NÃO MEXE AQUI */
+
+
+.slide{ /*  */  /* Se for mexer no style, mee onde quiser, menos aqui, pelo amor  */
+    display: flex;
+    justify-content: middle;
+    height: 500px;
+}
+.hidden{    /* Nem aqui */
+    display: none;
+    
+}
+
+
+/* NÃO MEXE AQUI */
+
+
+
+
+
+
+
+
+
+
+.questao-cont{
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+.questao-titul{
+    font-style: arial;
+    font-size: 50px;
+}
+.questao-cont input{
+    width: 500px;
+}
+.alternativas{
+    align-items: left;
+}
+
+.botão-resposta{
+    height:20px;
+    display-content: left;
+    margin-left: 25px;
+    width: 25px;
+    border-radius: 100px;
+}
