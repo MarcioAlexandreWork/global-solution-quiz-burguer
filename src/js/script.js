@@ -1,8 +1,9 @@
 const corback= window.document.body
 const corfont = window.document.body
 const image = window.document.body
+let q1 = window.document.getElementById('questaoum')
 /* const slide = window.document. */
-
+let resultado = parseInt()
 
 
 
@@ -42,6 +43,26 @@ function slide3(){
     sliderum.classList.add('hidden');
     sliderdois.classList.add('hidden');
     slidertres.classList.remove('hidden');
+}
+
+function questao1(){
+    if(q1==1){
+        resultado+=1
+    }
+    console.log(resultado)
+    console.log(q1)
+
+}
+function teste1(){
+    if(q1==='1'){
+    console.log('Input funnfou')
+}
+    else{
+        console.log('deu erro')
+}
+}
+function teste2(){
+    console.log('Input não funfou')
 }
 
 
