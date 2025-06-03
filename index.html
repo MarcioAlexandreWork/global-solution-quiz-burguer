@@ -8,13 +8,66 @@
 </head>
 <body>
 
-    <div class="container-cabecalho">
-        <p1 class="cabecalho">QUIZ</p1>
-        <button class="botoes"  onclick="clicarcin()" id="cinza">Cinza</button>
-        <button class="botoes"  onclick="clicarbra()" id="branco">Branco</button>
-        <button class="botoes"  onclick="clicarazul()" id="azul">azul</button>
-    </div>
-    
+
+
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">Quiz</a>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="clicarcin()">Background cinza</a></li>
+            <li><a href="#" onclick="clicarazul()">Background azul</a></li>
+            <li><a href="#" onclick="clicarbra()">Background branco</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<!--     <header>
+        <nav class="container-cabecalho">
+            <p1 class="cabecalho">QUIZ</p1>
+            <nav class="burguer">
+                <li><a class="botoes"  onclick="clicarbra()" id="branco" href="#">Branco</a></li>
+                <li><a class="botoes"  onclick="clicarcin()" id="cinza" href="#">Cinza</a></li>
+                <li><a class="botoes"  onclick="clicarazul()" id="azul" href="#">Azul</a></li>
+            </nav>
+        </nav>
+    </header> -->
+
+
+
+<!--
+    <header>
+    <nav class="navbar">
+        <a href="#" class="logo">Meu Logo</a>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>  -->
 
     
     <div>
@@ -67,7 +120,7 @@
             <button class="botão-resposta" type="submit" onclick="errado(0)">3</button>
             <p1>Não utilize hortas que sofreram em inundação</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(0)">4</button>
-            <p1>teste</p1><br>
+            <p1>Descartar qualquer organico que teve contato com a água</p1><br><br>
             
         </div>
         <p id="resum0">Questão foi respondidada: False</p>
@@ -86,17 +139,17 @@
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">2 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">2 - Qual desses é uma forma de prever uma enchente?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(1)">1</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(1)">1</button>
+            <p1>Sistemas de drenagem</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(1)">2</button>
-            <p1>teste</p1><br>
+            <p1>Drones acoplados com cameras</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(1)">3</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(1)">4</button>
-            <p1>teste</p1><br>
-            
+            <p1>Piscinões</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(1)">4</button>
+            <p1>Simuladores gráficos</p1><br>
+
         </div>
          <div><p id="resum1">Questão foi respondidada: False</p>
               <button class="hidden" type="submit" onclick="substituir(1)" id="x1">Substituir?</button>
@@ -109,16 +162,16 @@
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">3 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">3 - O que uma enchente pode causar ao nosso corpo?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(2)">1</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(2)">1</button>
+            <p1>Morte instantânea, já que a água possui um virus que causa morte no momento que você engole ela</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(2)">2</button>
-            <p1>teste</p1><br>
+            <p1>O defeito de muitos eletrônicos</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(2)">3</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(2)">4</button>
-            <p1>teste</p1><br>
+            <p1>Nada, nosso corpo tem uma resistência muito forte</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(2)">4</button>
+            <p1>Várias doenças, como hepatite A e leptospirose</p1><br>
             
         </div>
         <p id="resum2">Questão foi respondidada: False</p>
@@ -128,141 +181,161 @@
 
 
     <div class="questao-cont">
-        <p1 class="questao-titul">4 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">4 - Cite 2 doenças que podem ser pegas numa enchente</p1>
         <div class="alternativas">
             <button class="botão-resposta" type="submit" onclick="correto(3)">1</button>
-            <p1>teste</p1><br>
+            <p1>Hepatite A e leptospirose</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(3)">2</button>
-            <p1>teste</p1><br>
+            <p1>Cancer nos rins e teníase</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(3)">3</button>
-            <p1>teste</p1><br>
+            <p1>Hepatia C e teníase</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(3)">4</button>
-            <p1>teste</p1><br>
+            <p1>Gripe suína e Corona virus</p1><br>
             
         </div>
         <p id="resum3">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x3">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(3)" id="x3">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">5 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">5 - Como se filtra água?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(4)">1</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(4)">2</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(4)">1</button>
+            <p1>Não se necessita de nada, toda água é potável</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(4)">2</button>
+            <p1>Aquecento-a com um pouco de cloro</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(4)">3</button>
-            <p1>teste</p1><br>
+            <p1>Apenas aquecendo-a</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(4)">4</button>
-            <p1>teste</p1><br>
+            <p1>Colocando o quanto de cloro quiser, já que cloro é saudável para o corpo humano e faz 0 mal ao organismo</p1><br>
             
         </div>
         <p id="resum4">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x4">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(4)" id="x4">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">6 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">6 - Recipientes precisam ficar bem fechados? Se sim, por que?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(5)">1</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(5)">1</button>
+            <p1>Não, por que um pouco de água dentro de um recipiente não faz mal algum</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(5)">2</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(5)">3</button>
-            <p1>teste</p1><br>
+            <p1>Não, por que a água não vai subir mais e os reciipientes podem ser guardados em prateleiras altas</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(5)">3</button>
+            <p1>Sim, para evitar que fiquem contamidados caso a agua suba</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(5)">4</button>
-            <p1>teste</p1><br>
+            <p1>Sim, mas só gente fresca faz isso, um pouco dessa água causa nada</p1><br>
             
         </div>
         <p id="resum5">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x5">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(5)" id="x5">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">7 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">7 - Qual a utilidade de piscinões?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(6)">1</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(6)">2</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(6)">1</button>
+            <p1>Tomar banho de piscína</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(6)">2</button>
+            <p1>Conter a água da enchente numa "piscína"</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(6)">3</button>
-            <p1>teste</p1><br>
+            <p1>Não tem utildade</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(6)">4</button>
-            <p1>teste</p1><br>
+            <p1>Roubar a água do rio</p1><br>
             
         </div>
         <p id="resum6">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x6">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(6)" id="x6">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">8 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">8 - Para o que servem os sistemas de drenagem?</p1>
         <div class="alternativas">
             <button class="botão-resposta" type="submit" onclick="correto(7)">1</button>
-            <p1>teste</p1><br>
+            <p1>Pegar a água da chuvas e leva-la a algum ponto de tratamento d'agua para que possa ser usada para a população como água saudável</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(7)">2</button>
-            <p1>teste</p1><br>
+            <p1>Pega a água das chuvas e leva-la ao rio mais próximo da cidade</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(7)">3</button>
-            <p1>teste</p1><br>
+            <p1>Pegar a água das chuvas e leva-la diretamente ao piscinão</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(7)">4</button>
-            <p1>teste</p1><br>
+            <p1>Não tem utilidade</p1><br>
+
             
         </div>
         <p id="resum7">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x7">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(7)" id="x7">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">9 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">9 - Como se faz uma solução desinfetante?</p1>
         <div class="alternativas">
             <button class="botão-resposta" type="submit" onclick="correto(8)">1</button>
-            <p1>teste</p1><br>
+            <p1>1 copo de agua sanitária para 4 copos de água</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(8)">2</button>
-            <p1>teste</p1><br>
+            <p1>2 copos de água sanitária para 4 copos de água</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(8)">3</button>
-            <p1>teste</p1><br>
+            <p1>3 copos de água sanitária para 4 copos de água</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(8)">4</button>
-            <p1>teste</p1><br>
+            <p1>4 copos de água sanitária para 4 copos de água</p1><br>
             
         </div>
         <p id="resum8">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x8">Substituir?</button>
+        <button class="hidden" type="submit" onclick="substituir(8)" id="x8">Substituir?</button>
 
     </div><br>
 
     
     <div class="questao-cont">
-        <p1 class="questao-titul">10 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">10 - O que fazer caso medicamentos entrem em contato com a água da enchente?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit" onclick="correto(9)">1</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit" onclick="errado(9)">2</button>
-            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(9)">1</button>
+            <p1>Limpar os medicamentos com água e cloro</p1><br>
+            <button class="botão-resposta" type="submit" onclick="correto(9)">2</button>
+            <p1>Descarta-los</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(9)">3</button>
-            <p1>teste</p1><br>
+            <p1>Utiliza-los sem problema</p1><br>
             <button class="botão-resposta" type="submit" onclick="errado(9)">4</button>
-            <p1>teste</p1><br>
+            <p1>Mistura-los na água para tirar o virus dentro deles</p1><br>
             
         </div>
-        <p id="resum9">Questão foi respondidada: False</p>
-        <button class="hidden" type="submit" onclick="substituir(2)" id="x9">Substituir?</button>
 
+        <p id="resum9">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(9)" id="x9">Substituir?</button>
     </div><br>
 
-    
 
 
-    
+
+
+
+
+
+
+
+
+    <div id="parabains">
+        <p1>Clique no botão abaixo para ver o resultado</p1><br>
+        <button onclick="mostr()">Mostrar resultado</button>
+    </div><br>
+
+    <p class="hidden" id="fazer">Por favor, faça todas as questões para ver o resultado</p>
+    <div class="hidden" id="result">
+        <p class="resultadofinal">Resultado final</p>
+        <p class="resultadofinal" id="resultados">Acertos: </p>
+        <p class="resultadofinal" id="erros">Questões erradas: </p>
+    </div>
+     
+
 
 
 
