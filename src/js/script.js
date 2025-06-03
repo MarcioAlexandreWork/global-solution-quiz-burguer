@@ -3,8 +3,9 @@ const corfont = window.document.body
 const image = window.document.body
 /* const slide = window.document. */
 let resultado = parseInt(0)
+var contador = parseInt(0)
 var questoes=[0,0,0,0,0,0,0,0,0,0]
-
+var erradas=[]
 
 
 
@@ -63,20 +64,23 @@ function slide3(){
 
 
 
-
 /* Funções dos botões  das questões*/
 
+
+
+/* acerto */
 function correto(x){
     if(questoes[x]===0){
-        resultado+=1
-        console.log(resultado)
         let resum = window.document.getElementById('resum'+x)
         resum.innerText="Questão foi respondidada: True!"
-        console.log(resultado)
 
-
+        contador+=1
+        resultado+=1
         questoes[x]+=1
-}
+    }
+
+
+
     else{
         let resum = window.document.getElementById('resum'+x)
         let index = document.getElementById('x'+x)
@@ -84,17 +88,30 @@ function correto(x){
         index.classList.remove('hidden')
     }
 
+    console.log(contador)
 }
 
+
+
+
+
+
+
+/* Erro */
 function errado(x){
     if(questoes[x]===0){
-        console.log(resultado)
         let resum = window.document.getElementById('resum'+x)
         resum.innerText="Questão foi respondidada: True!"
-        console.log(resultado)
+        erradas.push(x+1)
 
+        contador+=1
         questoes[x]+=1
-}
+
+
+    }
+
+
+
     else{
         let resum = window.document.getElementById('resum'+x)
         let index = document.getElementById('x'+x)
@@ -102,18 +119,76 @@ function errado(x){
         index.classList.remove('hidden')
     }
 
+    console.log(contador)
+
 }
+
+
+
+
+/* Substituir */
 function substituir(x){
     let resum = window.document.getElementById('resum'+x)
     let index = document.getElementById('x'+x)
     questoes[x]-=1
     resultado-=1
+    contador-=1
     resum.innerText="Questão substituida, responda novamente"
     index.classList.add('hidden')
-    console.log(resultado)
+
 }
 
 
+
+
+
+
+
+
+/* Mostrar */
+function mostr(){
+    if(contador==10){
+        result.classList.remove('hidden')
+        resultados.innerHTML=("Acertos: "+resultado)
+        erros.innerHTML=("Questões erradas: "+erradas)
+        fazer.classList.add('hidden')
+    }
+    else{
+        fazer.classList.remove('hidden')
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Burger */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navList = document.getElementById('nav-list');
+
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('active');
+        navList.classList.toggle('active');
+    });
+
+    navList.querySelectorAll('a').forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                hamburgerMenu.classList.remove('active');
+                navList.classList.remove('active');
+            }
+        });
+    });
+});
 
 
 
