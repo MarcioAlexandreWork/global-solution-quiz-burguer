@@ -25,56 +25,249 @@
 
 
     
+    <div class="cont-slides">
+        <div class='slide' id="sliderum">
+            <img src="src\assets\imgs\imagem1.png"  id="imagem1" alt="Riscos das enchentes">  <!-- O img ta incompleto, coloca um g no final para aparecer as imagens -->
+        </div>
 
-    <div class='slide' id="sliderum">
-        <img src="src\assets\imgs\imagem1.png"  id="imagem1" alt="Riscos das enchentes">  <!-- O img ta incompleto, coloca um g no final para aparecer as imagens -->
+        <div class='slide' id="sliderdois">
+            <img src="src\assets\imgs\image2.png"  id="imagem2" alt="Como se previnir de enchentes">
+        </div>
+
+        <div class='slide' id="slidertres">
+            <img src="src\assets\imgs\imagem3.png"  id="imagem3" alt="Cuidados nas enchentes"> 
+       </div>
     </div>
 
-    <div class='slide' id="sliderdois">
-        <img src="src\assets\imgs\image2.png"  id="imagem2" alt="Como se previnir de enchentes">
-    </div>
 
-    <div class='slide' id="slidertres">
-        <img src="src\assets\imgs\imagem3.png"  id="imagem3" alt="Cuidados nas enchentes"> 
-    </div>
 
-    <p align="center" class="quiztime" >HORA DO QUIZ!!!!!!!!!11!!1!!1!!1!</p>
+
+
+
+
+
+
+    <p align="center" class="quiztime" >Quiz abaixo!</p>
+
+
+
+
+
+
+
+
+
     <div class="questao-cont">
-        <p1 class="questao-titul">1 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">1 - Quais das alternativas abaixo está incorreta?</p1>
         <div class="alternativas">
-            <button class="botão-resposta" type="submit">1</button>
+            <button class="botão-resposta" type="submit" onclick="correto(0)">1</button>
+            <p1>Não existem formas de filtrar água em casa</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(0)">2</button>
+            <p1>Existem formas de filtrar água em casa</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(0)">3</button>
+            <p1>Não utilize hortas que sofreram em inundação</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(0)">4</button>
             <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit">2</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit">3</button>
-            <p1>teste</p1><br>
-            <button class="botão-resposta" type="submit">4</button>
-            <p1>teste</p1><br>
+            
         </div>
-    </div>
+        <p id="resum0">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(0)" id="x0">Substituir?</button>
+
+    </div><br>
 
 
 
 
-<!--
+
+
+
+
+
+
+    
     <div class="questao-cont">
-        <p1 class="questao-titul">1 - jdhjsdabjbfej</p1>
+        <p1 class="questao-titul">2 - jdhjsdabjbfej</p1>
         <div class="alternativas">
-            <button class="botoes" type="">teste</button><br>
+            <button class="botão-resposta" type="submit" onclick="correto(1)">1</button>
             <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(1)">2</button>
             <p1>teste</p1><br>
-            <p1>teste</p1>
+            <button class="botão-resposta" type="submit" onclick="errado(1)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(1)">4</button>
+            <p1>teste</p1><br>
+            
         </div>
-        <div>
-            <br><p1>Resposta:</p1>
-            <input type="text" id="questaoum" oninput="teste1()" onerror="teste2()"><br>
-            <button type="submit" id="enviarum" onclick="questao1()">ENVIAR RESPOSTA</button>
-
+         <div><p id="resum1">Questão foi respondidada: False</p>
+              <button class="hidden" type="submit" onclick="substituir(1)" id="x1">Substituir?</button>
         </div>
-    </div>
+    </div><br>
 
 
- -->
+
+
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">3 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(2)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(2)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(2)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(2)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum2">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x2">Substituir?</button>
+
+    </div><br>
+
+
+    <div class="questao-cont">
+        <p1 class="questao-titul">4 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(3)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(3)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(3)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(3)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum3">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x3">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">5 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(4)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(4)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(4)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(4)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum4">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x4">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">6 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(5)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(5)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(5)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(5)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum5">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x5">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">7 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(6)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(6)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(6)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(6)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum6">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x6">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">8 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(7)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(7)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(7)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(7)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum7">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x7">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">9 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(8)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(8)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(8)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(8)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum8">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x8">Substituir?</button>
+
+    </div><br>
+
+    
+    <div class="questao-cont">
+        <p1 class="questao-titul">10 - jdhjsdabjbfej</p1>
+        <div class="alternativas">
+            <button class="botão-resposta" type="submit" onclick="correto(9)">1</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(9)">2</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(9)">3</button>
+            <p1>teste</p1><br>
+            <button class="botão-resposta" type="submit" onclick="errado(9)">4</button>
+            <p1>teste</p1><br>
+            
+        </div>
+        <p id="resum9">Questão foi respondidada: False</p>
+        <button class="hidden" type="submit" onclick="substituir(2)" id="x9">Substituir?</button>
+
+    </div><br>
+
+    
+
+
+    
+
+
+
+
+
 
 
 
